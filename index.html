@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Hustler</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <section>
+    <div class="strip-header-nav" style="left: 0px;" id="stripHeaderNav" >
+      <div class="strip-logo">
+        <img src="logo (1).png">
+      </div>
+      <div class="strip-toggel-menu">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">☰</span>
+      </div>
+    
+      <div class="strip-social-icon">
+        <div class="strip-lang">
+          <span>
+            <i class="bi bi-globe"></i>
+          </span>
+        </div>
+        <div class="strip-share">
+          <span>
+            <i class="bi bi-share-fill"></i>
+          </span>
+        </div>
+      </div>
+    </div>
+    </section>
+  <section id="event">
+    <div id="mySidenav" class="sidenav" style="width: 0px;">
+        <a class="closebtn" onclick="closeNav()">×</a>
+        <a href="#" id="category">Now playing</a>
+        <a href="#" id="category">Popular</a>
+        <a href="#" id="category">Top Rated</a>
+        <a href="#" id="category">Trending</a>
+        <a href="#" id="category">Upcoming</a>
+        <a href="#contact">Contact Us</a>
+        <div class="nav-social-item d-flex">
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-twitter"></i></a>
+          <a href="#"><i class="bi bi-globe"></i></a>
+          <div class="pt-3">
+            <span class="text-white">Copyright Â© 2019 All Rights Reserved.</span>
+          </div>
+          </div>
+    </div>
+    <section class="pt-5">
+    <div class="container w-75">
+        <div class="row">
+            <div class="col-md-6">
+                <input type="text" placeholder="Get Movies By Word..." id="searchByWord" class="form-control M">
+            </div>
+            <div class="col-md-6">
+                    <input type="text" placeholder="Search.." id="search" class="form-control M">
+            </div>
+        </div>
+    </div>
+</section>
+<section id="main" class="container d-flex flex-wrap text-center py-2 my-1 shadow">
+    <div class="row justify-content-center">
+        <div class="movie col-md-6 col-lg-4 my-3 shadow">
+            <img src="" alt="image">
+            <div class="overview d-flex justify-content-center align-items-center">
+               
+            </div>
+        </div>
+        <div class="movie col-md-6 col-lg-4 my-3 shadow">
+            <img src="" alt="image">
+            <div class="overview d-flex justify-content-center align-items-center">
+                
+        </div>
+        <div class="movie col-md-6 col-lg-4 my-3 shadow">
+            <img src="" alt="image">
+            <div class="overview d-flex justify-content-center align-items-center">
+    </div>
+   
+</section>
+<section id="contact" class="container myM w-75 mx-auto my-5 ">  
+	<h2 class="text-light my-5">ContacUs...</h2>
+	<div class="row">
+	  <div class="col-md-6">
+	<div class="form-group">
+	  <input class="form-control M" id="name" placeholder="Enter Your Name">
+		<div class="alert alert-danger" id="namealert" role="alert" style="display: block;">
+		  Your Name is not valid
+		</div>
+	</div>
+  </div>
+  <div class="col-md-6">
+	<div class="form-group">
+	  <input class="form-control M" id="email" placeholder="Enter Email">
+	  <div class="alert alert-danger" id="emailalert" role="alert">
+		entre valid email
+	  </div>
+	</div>
+  </div>
+  <div class="col-md-6">
+	<div class="form-group">
+	  <input class="form-control M" id="phone" placeholder="Enter phone">
+	  <div class="alert alert-danger" id="phonealert" role="alert">
+		entre valid phone
+	  </div>
+	</div>
+  </div>
+  <div class="col-md-6">
+	<div class="form-group">
+	  <input class="form-control M" id="age" placeholder="Enter Age">
+	  <div class="alert alert-danger" id="agealert" role="alert" style="display: none;">
+		entre valid Age
+	  </div>
+	</div>
+  </div>
+  <div class="col-md-6">
+	<div class="form-group">
+	  <input class="form-control M" type="password" id="password" placeholder="Enter Password">
+	  <div class="alert alert-danger" id="passwordalert" role="alert">
+		entre valid password *Minimum eight characters, at least one letter and one number:*
+	  </div>
+	</div>
+  </div>
+  <div class="col-md-6">
+	<div class="form-group">
+	  <input class="form-control M" type="password" id="rePassword" placeholder="Enter RePassword">
+	  <div class="alert alert-danger" id="repasswordalert" role="alert">
+		entre valid Repassword
+	  </div>
+	</div>
+  </div>
+
+
+  </div>  
+	
+	<button type="submit" disabled="" id="submitBtn" class="btn btn-outline-danger">Submit</button>
+
+  </section>
+    
+    <script src="JS/jquery-3.6.0.min.js"></script>
+    <script src="JS/main.js"></script>
+</body>
+</html>
